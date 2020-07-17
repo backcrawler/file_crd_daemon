@@ -1,0 +1,7 @@
+{
+  "SECRET_KEY":"c-!$*m%e6^xfvm@imj+gesxipo_+p3-@nt%o*ju&so)c#t%-v9",
+  "DB_USER": "postgres",
+  "DB_PASSWORD": "1213",
+  "DB_HOST": "localhost",
+  "DB_PORT": "5432"
+}
