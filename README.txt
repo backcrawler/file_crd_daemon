@@ -32,13 +32,14 @@ sudo service postgresql reload
 
 Then python is installed:
 sudo apt-get update
-sudo apt-get install build-essential libssl-dev libffi-dev python-dev
+sudo apt-get install build-essential libssl-dev libffi-dev python-dev python3-lxml nginx
 curl -O https://www.python.org/ftp/python/3.7.6/Python-3.7.6.tar.xz  #for 3.7.6
 tar -xf Python-3.7.3.tar.xz
 cd Python-3.7.3
 ./configure --enable-optimizations
 make -j 8
 sudo make altinstall
+sudo apt-get install supervisor
 sudo apt-get install python3-pip
 sudo apt-get install python3-venv
 

@@ -4,15 +4,13 @@ from rest_framework.views import APIView
 from rest_framework.parsers import FileUploadParser, JSONParser
 from rest_framework.renderers import JSONRenderer
 
-import os
-
 from .models import Pack
 from .serializers import PackSerializer
-from .renderers import PassthroughRenderer
 from .utils import get_hash_name
 
 
 class FileView(APIView):
+    '''Main View. Handles get, post and delete operations'''
     parser_classes = (FileUploadParser, JSONParser)
     renderer_classes = (JSONRenderer,)
 
