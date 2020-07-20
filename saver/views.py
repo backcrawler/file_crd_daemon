@@ -21,6 +21,7 @@ class FileView(APIView):
             return Response(status=404)
         response = FileResponse(open(file.f.path, 'rb'))
         response['Content-Disposition'] = 'attachment; filename={}'.format(file.hash_name)
+        response['status'] = 200
         return response
 
     def post(self, request):
